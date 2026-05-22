@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mateos Arquitectos | Tu reforma, de principio a fin</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e3e2e0",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "background": "#faf9f7",
+                        "on-primary-fixed-variant": "#4b4642",
+                        "primary-fixed-dim": "#cdc5c0",
+                        "secondary-container": "#ffa08b",
+                        "error": "#ba1a1a",
+                        "primary-container": "#2d2926",
+                        "outline": "#7e756f",
+                        "on-surface-variant": "#4d4540",
+                        "primary-fixed": "#e9e1dc",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-primary-container": "#96908b",
+                        "inverse-surface": "#2f3130",
+                        "on-secondary-fixed-variant": "#763223",
+                        "outline-variant": "#cfc4bd",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#1e1b18",
+                        "surface-container-high": "#e9e8e6",
+                        "surface": "#faf9f7",
+                        "surface-dim": "#dadad8",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#3c0701",
+                        "surface-tint": "#635d5a",
+                        "on-tertiary-container": "#a78c67",
+                        "on-tertiary-fixed-variant": "#584324",
+                        "secondary": "#934938",
+                        "on-background": "#1a1c1b",
+                        "surface-bright": "#faf9f7",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#feddb3",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#efeeec",
+                        "on-surface": "#1a1c1b",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#281801",
+                        "tertiary": "#201200",
+                        "tertiary-container": "#382609",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#cdc5c0",
+                        "secondary-fixed": "#ffdad3",
+                        "primary": "#181512",
+                        "surface-variant": "#e3e2e0",
+                        "on-secondary-container": "#793425",
+                        "secondary-fixed-dim": "#ffb4a4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-display": ["Playfair Display"],
+                        "label-md": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-caps": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "headline-display": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-background/90 dark:bg-background/90 backdrop-blur-md fixed w-full top-0 left-0 z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="text-body-lg font-headline-lg-mobile font-bold tracking-tight text-primary dark:text-primary-fixed" href="#">MATEOS ARQUITECTOS</a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high px-3 py-2 rounded" href="#servicios">Servicios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high px-3 py-2 rounded" href="#proyectos">Proyectos</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high px-3 py-2 rounded" href="#quienes-somos">Quiénes somos</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high px-3 py-2 rounded" href="#testimonios">Testimonios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high px-3 py-2 rounded" href="#contacto">Contacto</a>
+<a class="font-label-caps text-label-caps bg-primary text-on-primary px-6 py-3 hover:opacity-90 transition-opacity" href="#contacto">
+                    Solicitar presupuesto
+                </a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero -->
+<header class="relative min-h-[921px] flex flex-col justify-center pt-24 pb-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img alt="A breathtaking, minimalist architectural interior featuring expansive floor-to-ceiling windows that flood the open-concept living space with soft, natural light. The design is characterized by clean lines, a sophisticated neutral palette of warm earth tones and pristine whites, and carefully curated high-end furnishings. The mood is serene, elegant, and timeless, perfectly capturing the essence of modern luxury living spaces." class="w-full h-full object-cover object-center opacity-40" data-alt="A breathtaking, minimalist architectural interior featuring expansive floor-to-ceiling windows that flood the open-concept living space with soft, natural light. The design is characterized by clean lines, a sophisticated neutral palette of warm earth tones and pristine whites, and carefully curated high-end furnishings. The mood is serene, elegant, and timeless, perfectly capturing the essence of modern luxury living spaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8nnpa8wl1nmz6Sz7Q7PnEv1b2QcOBIkRX3HrOKyy4i3o24OonN8PuYzhKj8BYwME21Dvu60YKrhDrEj88tRPHAisEUUM6wcHaBVvxtn9mglwSamxIbNPap_nQC2-3rMBmkqOLTUhWu1m7isOtLAvUOB0ByT_gZEDtvLV378xkJgJc0i-7foDuE8Ax07rZoMEkLpvtY4lc212c175jRQ5L13RIXhMJajp3x-QqRGsEl9qoxCZIhwiJK0OU3flwB0lNVWHsofG1Oww"/>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 flex flex-col gap-8">
+<h1 class="font-headline-display text-headline-display text-primary leading-tight">Tu reforma, de principio a fin</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Más de 40 años transformando hogares en Ayamonte y la costa onubense.</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<a class="inline-flex justify-center items-center font-label-caps text-label-caps bg-primary text-on-primary px-8 py-4 hover:bg-surface-tint transition-colors" href="#proyectos">
+                        Ver proyectos
+                    </a>
+<a class="inline-flex justify-center items-center font-label-caps text-label-caps border border-primary text-primary px-8 py-4 hover:bg-surface-container-lowest transition-colors" href="#contacto">
+                        Contactar ahora
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full bg-surface-container-highest/80 backdrop-blur-sm border-t border-outline-variant/30 hidden md:block">
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="font-label-md text-label-md text-on-surface">40+ años de experiencia</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">+200 proyectos realizados</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md text-on-surface">100% obras supervisadas</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Value Proposition -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">No solo diseñamos espacios.<br/>Los hacemos vivibles.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col items-center text-center p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">design_services</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">Proyecto personalizado desde cero</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cada detalle pensado para tu estilo de vida, sin plantillas prefabricadas.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">Dirección de obra incluida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Estamos a pie de obra cada día para garantizar la ejecución perfecta.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">assignment</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">Gestión integral de permisos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Nos ocupamos de toda la burocracia y licencias necesarias.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container" id="servicios">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 border-b border-outline-variant pb-6">Servicios</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+<!-- Card 1: Reformas Integrales (Large) -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-primary">
+<img alt="A sleek, modern kitchen undergoing a high-end renovation. The space features clean, minimalist cabinetry in a matte finish, paired with a stunning natural stone island. Subtle architectural lighting highlights the textures of the materials. The overall composition feels expansive, professional, and indicative of top-tier residential interior design." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="A sleek, modern kitchen undergoing a high-end renovation. The space features clean, minimalist cabinetry in a matte finish, paired with a stunning natural stone island. Subtle architectural lighting highlights the textures of the materials. The overall composition feels expansive, professional, and indicative of top-tier residential interior design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVqXZjdx0-G__eeQ6DCBXDkuqbUz5o_Sr1isuJZMarvZ-VF5tUJDP0X6d7KwI2VDyM_0oCgKQsQK_yZkicP8n5hyG24DucQctBILv394Uv_VUqWypNFFNN4ZVS50ChT4m5I91OSGFTN7zRUemFNqlbuJI4JLvLm1C0nO7_UpItelcsuB6fUynHvUIciyVEUQtY0q2VFBwozuuzrNSkWvy-hd0nZ04UfMqkOb5VNCCdHrPVHXYArvWx96Zg-7qPfFolZlAzj-iVqQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Reformas integrales</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-h-0 opacity-0 group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-500 overflow-hidden">Transformamos viviendas completas, coordinando todos los gremios para un resultado impecable.</p>
+</div>
+</div>
+<!-- Card 2: Proyectos de vivienda -->
+<div class="md:col-span-2 relative group overflow-hidden bg-primary">
+<img alt="Exterior view of a contemporary architectural home bathed in golden hour light. The minimalist facade features a mix of crisp white render and warm timber accents, harmonizing with its natural surroundings. The clean geometric lines convey a sense of modern elegance and structural precision typical of high-end residential projects." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Exterior view of a contemporary architectural home bathed in golden hour light. The minimalist facade features a mix of crisp white render and warm timber accents, harmonizing with its natural surroundings. The clean geometric lines convey a sense of modern elegance and structural precision typical of high-end residential projects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ9TQb6GTxUNxrzyoV7sLPnBAoAf-j2QIA3DhNod8e405yd2rxbh4fa9586B_BDuleg8Oo-F6Yk2xKFZ-cJIEExD7znlcFlKVR-hH8IFkETKUjBGEk2ThNqnRFO5LpQ-NJHPxhqSpPEDjR5Z7pN3w3NF_DvgPKIzv1Oy4nqaVA9koVGRfQiuXL-GP9-pQioMVXtoKekCvLcfzCJtvQgEQFiGl_i_9UykjmEyCNkEuGMJUbGvUaIhOx5v7elvRPwxjy8GjhCBs8d6Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="font-label-caps text-label-caps text-on-primary mb-2">Proyectos de vivienda</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-h-0 opacity-0 group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-500 overflow-hidden">Diseño arquitectónico de obra nueva.</p>
+</div>
+</div>
+<!-- Card 3: Arquitectura comercial -->
+<div class="md:col-span-1 relative group overflow-hidden bg-primary">
+<div class="absolute inset-0 bg-surface-container-highest/90 flex flex-col justify-center p-6 border border-outline-variant/30">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Arquitectura comercial</h3>
+</div>
+</div>
+<!-- Card 4: Dirección de obra -->
+<div class="md:col-span-1 relative group overflow-hidden bg-primary">
+<img alt="Close-up of architectural blueprints spread out on a wooden table, with a hard hat and drafting tools. The focus is sharp on the intricate lines of the floor plan, emphasizing precision, planning, and professional oversight during the construction phase of an elegant building project." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Close-up of architectural blueprints spread out on a wooden table, with a hard hat and drafting tools. The focus is sharp on the intricate lines of the floor plan, emphasizing precision, planning, and professional oversight during the construction phase of an elegant building project." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUOLiwOmNSD8PFsyQo50WirqTAgjBWOmlRg_alCAspdcSmlNKfa-Nl9yefvWEE08u-V6Y_gUwMgIcrjOG_HWPjm9d8AB0mnEeEwTobJGcfSn3SamKsCCsUaxdzJXQQQkL6EtfB7g0sVI5POyyqkWHPsBPwSQpqG-K7jdv1PcBCTTyJrf0vux_vjqpz8EVjXP0dgplrf-WVvp7uO4aHJjJQw9zbsyV9FJZf8tCIGeVpAcX8cqGHPGSjoH-fc4g-bJS91HCgs841nfU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="font-label-caps text-label-caps text-on-primary mb-2">Dirección de obra</h3>
+</div>
+</div>
+<!-- Card 5: Diseño de interiores -->
+<div class="md:col-span-2 relative group overflow-hidden bg-primary">
+<img alt="A beautifully styled minimalist living room showcasing premium interior design. Soft, neutral-toned furniture is arranged symmetrically against a textured plaster wall. The lighting is soft and ambient, highlighting natural materials like linen and light oak, creating a calm, sophisticated, and cohesive aesthetic." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="A beautifully styled minimalist living room showcasing premium interior design. Soft, neutral-toned furniture is arranged symmetrically against a textured plaster wall. The lighting is soft and ambient, highlighting natural materials like linen and light oak, creating a calm, sophisticated, and cohesive aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIrITwxWZhHnQGWPjrPalZqZckHYQ2q3RYGD_O5OiJjTO03ItDzoHaLOt4TVth7YbQt0UKzH1fuFYz-65UyWaU-2hl6CFcfajKTnWsTDhuGB_BoQbx9BYf1GtLM-NZuOZ1FOcq9P5ilzjwVBIHU1JRHXdcAUALmOAWp8jwaHvtmNP6MV0HuJZDf-vr4Ii8aT0BSvGbsymyTQU8z0wN9jb8H3YNemoKmpBM7pUyT4Een7CQnV4VrxKTpFM1YXvqMtD-tmRIsnA69x8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="font-label-caps text-label-caps text-on-primary mb-2">Diseño de interiores</h3>
+</div>
+</div>
+<!-- Card 6: Consultoría arquitectónica -->
+<div class="md:col-span-2 relative group overflow-hidden bg-primary">
+<div class="absolute inset-0 bg-surface-container-highest/90 flex flex-col justify-center p-6 border border-outline-variant/30">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">conversation</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Consultoría arquitectónica</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="proyectos">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-outline-variant pb-6 gap-6">
+<h2 class="font-headline-lg text-headline-lg text-primary">Algunas de nuestras obras</h2>
+<a class="font-label-caps text-label-caps border-b border-primary text-primary pb-1 hover:text-secondary hover:border-secondary transition-colors" href="#">
+                    Ver todos los proyectos
+                </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-16">
+<!-- Project 1 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container-low">
+<img alt="A stunning modern villa located on the coast, featuring expansive glass sliding doors that seamlessly connect the indoor living space to a minimalist outdoor terrace and infinity pool. The architectural style is clean and geometric, using white render and stone cladding, conveying a luxurious, airy, and sophisticated coastal lifestyle." class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A stunning modern villa located on the coast, featuring expansive glass sliding doors that seamlessly connect the indoor living space to a minimalist outdoor terrace and infinity pool. The architectural style is clean and geometric, using white render and stone cladding, conveying a luxurious, airy, and sophisticated coastal lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF2Box5y9Jbp1LCSP6KID_6xjz8fhQL-LLdqIwqLcgyBKuZSc6mP_AELw1yUAjpEpLHR_8PIqWnDf4PbcbIjOk2LJ-Pd8nroo9KDPPz6tW_Nks0TlOblqe9dK9n2uS9DI1Y5HLicMA0CEbF7b6wXwaTzAGLTsbxzwVD4R9brvaFWvH4MxZDRTpcevwg-2MZ8zk27OSDciePCzsjAF12TEGyMKvgYXLSAAuoc7KzPV2_Wu8cmIX1JI2-azPfUgR-5-EeHMvlmwi8BA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Villa Costa de la Luz</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span> Ayamonte
+                            </p>
+</div>
+<span class="font-label-caps text-label-caps text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                            Ver proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="group cursor-pointer md:mt-16">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container-low">
+<img alt="An elegantly renovated historic apartment interior. High ceilings with restored original moldings are paired with ultra-modern, minimalist furniture and abstract art. The light is diffused and soft, highlighting the contrast between the classic architectural bones and the contemporary design interventions. A perfect blend of old and new." class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="An elegantly renovated historic apartment interior. High ceilings with restored original moldings are paired with ultra-modern, minimalist furniture and abstract art. The light is diffused and soft, highlighting the contrast between the classic architectural bones and the contemporary design interventions. A perfect blend of old and new." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBflsL60eESv4TCtvomTpu8TDf4sL9hXdZfDeM2SBsBl6B0H_u7HMHOJFlQ_ikOZ7KDJRomj3c2T_iMETT78X7_vc8N9R52p3AaJOSqNCpopDR3MMlIm0mxP9-JitMB37q0naTcVEkbpnYVFEP558_ulG0G6u9o0pybt4PUA_xqXSlRXtbHoRcv9L2e07W5E1LZUr4Dv0quqm0aI4TWgLXOvLpZvd4yE72mghJ2NurWubkOTR5M_Ae_s9zs4uNr9BqWuuFLfNz9CG4"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Reforma Casa Señorial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span> Huelva Centro
+                            </p>
+</div>
+<span class="font-label-caps text-label-caps text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                            Ver proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="testimonios">
+<div class="max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Lo que dicen quienes ya confiaron en nosotros</h2>
+<div class="flex items-center justify-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Reseñas en Google</span>
+<div class="flex text-[#fbbc04]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors flex flex-col justify-between">
+<div>
+<div class="flex text-[#fbbc04] mb-4 text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"Excelentes profesionales. Entendieron a la perfección lo que queríamos para la reforma de nuestra casa. El resultado final superó nuestras expectativas y cumplieron con los plazos acordados. Muy recomendables."</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Pilar Morales</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors flex flex-col justify-between">
+<div>
+<div class="flex text-[#fbbc04] mb-4 text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"Great experience working with Mateos Arquitectos on our holiday home renovation. They handled all the permits and the project management seamlessly. The design is beautiful and highly functional."</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Han Vandevenne</p>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors flex flex-col justify-between">
+<div>
+<div class="flex text-[#fbbc04] mb-4 text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"Un equipo fantástico. Se encargaron de todo de principio a fin, lo que nos dio mucha tranquilidad. Destaco su atención al detalle y la comunicación constante durante toda la obra."</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Mariela Matute</p>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors flex flex-col justify-between">
+<div>
+<div class="flex text-[#fbbc04] mb-4 text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"Grandes ideas de diseño y ejecución impecable. Transformaron un piso antiguo en un espacio moderno y luminoso. Su asesoramiento en materiales fue clave. Volvería a confiar en ellos sin duda."</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Alejandro Marín</p>
+</div>
+</div>
+<!-- Review 5 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-outline-variant transition-colors flex flex-col justify-between lg:col-span-2">
+<div>
+<div class="flex text-[#fbbc04] mb-4 text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"Professional, creative and reliable. They transformed our space completely. The attention to detail and quality of finishes is exceptional. Highly recommend their services to anyone looking for a top-tier architectural firm in Huelva."</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Georgia Malki</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container relative w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto border-b border-surface-variant/20">
+<div class="md:col-span-1">
+<a class="font-headline-md text-headline-md text-on-primary block mb-6" href="#">MATEOS<br/>ARQUITECTOS</a>
+<p class="font-body-md text-body-md text-surface-variant/70 mb-6">Tu reforma, de principio a fin. Más de 40 años transformando espacios en Huelva y el Algarve.</p>
+<div class="flex gap-4">
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">camera_alt</span>
+</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">business</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-1 md:col-start-3">
+<h4 class="font-label-caps text-label-caps mb-6 text-on-primary">Estudio</h4>
+<ul class="space-y-4">
+<li><span class="font-body-md text-body-md text-surface-variant/70 block">Avenida de la Constitución, 12</span></li>
+<li><span class="font-body-md text-body-md text-surface-variant/70 block">21400 Ayamonte, Huelva</span></li>
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors" href="tel:+34900000000">+34 900 000 000</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors" href="mailto:info@mateosarquitectos.com">info@mateosarquitectos.com</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-caps text-label-caps mb-6 text-on-primary">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors hover:underline decoration-secondary underline-offset-4 transition-all duration-200 ease-in-out" href="#">Privacidad</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors hover:underline decoration-secondary underline-offset-4 transition-all duration-200 ease-in-out" href="#">Aviso Legal</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors hover:underline decoration-secondary underline-offset-4 transition-all duration-200 ease-in-out" href="#">Cookies</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-on-primary transition-colors hover:underline decoration-secondary underline-offset-4 transition-all duration-200 ease-in-out" href="#">Sitemap</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-surface-variant/50 font-label-md text-label-md">
+<p>© 2024 Mateos Arquitectos. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-50" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</body></html>
